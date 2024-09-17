@@ -34,3 +34,12 @@ mod tests {
         assert_eq!(factorial(5), 120);
     }
 }
+
+// factorial: usize -> usize
+fn factorial(n: usize) -> usize {
+    return if n == 0 {
+        1
+    } else {
+        n * factorial(n - 1)
+    }
+}
